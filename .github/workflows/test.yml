@@ -11,4 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Release notes
+        id: notes
         uses: filipjakubowski/release_notes_action
