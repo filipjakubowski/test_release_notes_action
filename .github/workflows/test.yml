@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Release notes
         id: notes
-        uses: filipjakubowski/release_notes_action
+        uses: filipjakubowski/release_notes_action@v0.0.3
