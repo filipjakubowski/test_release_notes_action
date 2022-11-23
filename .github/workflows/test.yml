@@ -1,0 +1,14 @@
+name: 'Release Notes'
+on:
+  workflow_dispatch:
+env:
+  JIRA_PROJECT_KEY: 'WPA'
+  JIRA_URL: 'https://koia.atlassian.net'
+  JIRA_API_TOKEN: ${{ secrets.JIRA_PAT }}
+  JIRA_USERNAME: 'filip.jakubowski@gmail.com'
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Release notes
+        uses: filipjakubowski/release_notes_action
