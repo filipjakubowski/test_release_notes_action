@@ -2,7 +2,7 @@ name: 'Release Notes'
 on:
   workflow_dispatch:
 env:
-  JIRA_PROJECT_KEY: 'WPA'
+  JIRA_PROJECT_KEY: 'WP'
   JIRA_URL: 'https://koia.atlassian.net'
   JIRA_API_TOKEN: ${{ secrets.JIRA_PAT }}
   JIRA_USERNAME: 'filip.jakubowski@gmail.com'
@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Release notes
         id: notes
-        uses: filipjakubowski/release_notes_action@v0.0.4
+        uses: filipjakubowski/release-notes-action@v0.0.1
