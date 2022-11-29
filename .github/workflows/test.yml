@@ -13,3 +13,5 @@ jobs:
       - name: Release notes
         id: notes
         uses: filipjakubowski/release-notes-action@v0.0.2
+      - name: show notes
+        run: echo  ${{ steps.notes.outputs.notes }}  
